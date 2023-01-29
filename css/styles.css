@@ -1,0 +1,2077 @@
+
+@font-face {
+    font-family:'Sofia Pro'; 
+    src: url("fonts/Sofia.otf") format("opentype"),
+         url("Sofia.otf") format("opentype");
+}
+
+@font-face {
+    font-family:'Sofia Pro';
+    src: url("fonts/Sofiaa.woff") format("woff"),
+         url("Sofiaa.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: local('Sofia Pro Regular'), local('Sofia-Pro-Regular'),
+        url('SofiaProRegular.woff2') format('woff2'),
+        url('SofiaProRegular.woff') format('woff'),
+        url('SofiaProRegular.ttf') format('truetype'),
+
+        url('fonts/SofiaProRegular.woff2') format('woff2'),
+        url('fonts/SofiaProRegular.woff') format('woff'),
+        url('fonts/SofiaProRegular.ttf') format('truetype'),
+        ;
+    font-style: normal;
+  }
+
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 16px;
+  color: black;
+  background-color: rgb(15, 15, 15) !important;
+  font-family: 'Oxygen', sans-serif;
+}
+
+
+#heart{
+ 
+ font-size: 19px;
+ opacity: 0.9;
+
+}
+
+.slideshow-container {
+  position: relative;
+  background: black;
+  border: 10px solid black;
+}
+
+
+
+
+
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: black;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 2px;
+  width: 25px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 10%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+
+.author {color: cornflowerblue;}
+
+.mySlides q{
+
+  color: white;
+  font-family: Sofia Pro,sans-serif;
+  font-weight: 350;
+  font-size: 22px;
+
+}
+
+.mySlides p{
+
+  color: white;
+  font-family: Sofia Pro,sans-serif;
+  font-size: 20px;
+
+}
+
+
+
+
+
+
+
+
+#img1{
+
+  position: relative;
+  animation: first 5s 3;
+  z-index: 1000;
+  left: -100px;
+  top: 45px;
+}
+
+#img2{
+
+  position: relative;
+  animation:second 5s 3; 
+  z-index: 100000;
+  top:15px;
+}
+
+#img3{
+  position: relative;
+  animation: third 5s 3;
+   top: 45px;
+    right: -100px;
+}
+#img4{
+  position: relative;
+  animation: fo 5s 3;
+}
+
+#img5{
+  position: relative;
+  animation: fi 5s 3;
+}
+
+
+@keyframes first {
+
+  0%{
+
+   left:180px;
+   top: 200px;
+  }
+
+  
+  100%{
+
+    left: -100px;
+    top: 45px;
+  }
+}
+
+@keyframes second {
+  0%{
+
+   top: 200px;
+
+  }
+
+
+
+  100%{
+
+    top:15px;
+  }
+}
+
+@keyframes third {
+  0%{
+
+   right: 180px;
+   top: 200px;
+  }
+
+
+  100%{
+    top: 45px;
+    right: -100px;
+  }
+}
+
+@keyframes fo{
+
+  0%{
+
+   right: 100px;
+   top: 200px;
+  }
+
+
+  100%{
+    top: 45px;
+    right: -100px;
+  }
+
+}
+
+@keyframes fi{
+
+  0%{
+
+   right: 100px;
+   top: 200px;
+  }
+
+
+  100%{
+    top: 45px;
+    right: -100px;
+  }
+  
+}
+
+
+
+#main-content{
+
+
+ height: 840px;
+ background-color: grey;
+ margin: 0 !important;
+ padding: 0 !important; 
+
+
+}
+
+
+
+
+
+
+#main-content .container {
+
+  margin:0;
+
+
+}
+
+
+
+/*////////////////////////////*/
+
+
+
+
+  
+ nav .linkk {
+    float: none;
+    position: fixed;
+    z-index: 9;
+    left: 100;
+    right: 0;
+    top: 90px;
+    bottom: 100%;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(0,0,0,.86);
+    overflow: hidden;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 28px;
+    box-sizing: border-box;
+    border-left: 10px solid #000000;
+    border-right: 10px solid #000000;
+
+    transition: all .5s ease-in-out;
+  }
+
+
+ .vis{
+
+    visibility: hidden;
+
+  }
+
+
+
+
+
+input[type=checkbox]{
+
+  margin-top: 0;
+  visibility: hidden;
+
+}
+
+
+
+
+/*//////////////////////////////*/
+
+
+
+
+
+
+/** HEADER **/
+ nav {
+  background-color: white;
+  border-radius: 0;
+  border: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  
+}
+
+
+
+.navbar-default {
+  background-color: rgb(15, 15, 15);
+  border-color: white;
+  
+}
+
+
+.stickk {
+
+  background-color: black; 
+  
+  position: fixed;
+  top: 0;
+  border: 0;
+  border-radius: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  height: 73px;
+
+} 
+
+.stickk #navline{
+  
+  visibility: hidden;
+}
+
+
+.stickk .navbar-brand h1 { /* Name */
+  animation: text 2s 1 forwards;
+  font-family: 'Sofia Pro', sans-serif;                               
+  color: white;
+  font-size: 57px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .38;
+  
+  
+}
+
+
+.containerer{
+
+  margin-right: 40px;
+  margin-left: 40px;
+
+
+}
+
+#bb:hover{
+
+
+  transition: 0.5s ease all;
+
+}
+
+.stickk #bb:hover{
+
+  transition: 0.5s ease all;
+
+}
+
+.stickk #bb {
+  color: white;
+  text-align: center;
+  opacity: 100%;
+  animation: menu 2s 1 forwards;
+}
+
+.stickk .icon-burger .line {
+  width: 40px;
+  height: 4px;
+  background-color: white;
+  margin: 5px;
+  border-radius: 4px;
+  transition: all .3s ease-in-out;
+}
+
+
+.stickk #nav-list {
+  top: 0.1%;
+  position: absolute;
+  left: 40.5%;
+  font-weight: bold;
+  font-family: Copperplate Gothic Light;
+  color: black;
+}
+
+#nav-list {
+  top: 15%;
+  position: absolute;
+  left: 60.5%;
+  font-weight: bold;
+  font-family: Copperplate Gothic Light;
+  color: black;
+}
+
+.stickk .linkk {
+    float: none;
+    position: fixed;
+    z-index: 9;
+    left: 100;
+    right: 0;
+    top: 70px;
+    bottom: 100%;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(0,0,0,.86);
+    overflow: hidden;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 30px;
+    box-sizing: border-box;
+    border-left: 10px solid #000000;
+    border-right: 10px solid #000000;
+    transition: all .5s ease-in-out;
+  }
+
+
+#cred{
+  background-color: rgb(39, 39, 39);
+  text-align: center;
+  font-family: 'Sofia Pro', sans-serif; 
+  color: white;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#arrow{
+  text-decoration: none;
+}
+
+.form-title{
+
+    font-family: 'Sofia Pro', sans-serif; 
+   font-size: 100px;
+   color: white;
+   font-weight: 390;
+   margin-bottom: 30px;
+   padding-left: 200px;
+   padding-right: 200px;
+   line-height: 120px;
+   font-weight: bold;
+
+}
+
+.form-desc{
+
+   font-family: 'Sofia Pro', sans-serif; 
+  font-size: 30px !important;
+  color: white !important;
+  font-weight: bold;
+  
+
+}
+
+
+#form-button{
+
+  margin-top: 50px;
+  margin-bottom: 120px;
+
+}
+
+#touch{
+  border-radius: 37px;
+  height: 80px;
+  font-size: 26px;
+  width: 350px;
+  font-weight: bold;
+  font-family: 'Sofia Pro', sans-serif;                               
+
+}
+
+
+#sofa{
+
+  overflow: hidden;
+  object-fit: cover;
+  height: 900px;
+}
+
+#anim{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden !important;
+
+}
+
+#stick{
+
+  overflow: hidden;
+
+}
+
+#stick {
+
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.centered {
+  position: absolute;
+  color: white;
+  top: 255%;
+  left: 40%;
+  margin-left: 50px;
+  font-family: 'Sofia Pro', sans-serif;  
+  font-size: 100px;
+  font-weight: bold;
+  padding-right: 200px;
+  width: 840px;
+  line-height: 100px;
+  z-index: 1000;
+  padding-top: 100px;
+  transform: translate(-50%, -50%);
+}
+.centeredd {
+  position: absolute;
+  color: white;
+  top: 650%;
+  left: 40%;
+  margin-left: 50px;
+  font-family: 'Sofia Pro', sans-serif;  
+  font-size: 100px;
+  font-weight: bold;
+  padding-right: 200px;
+  width: 840px;
+  line-height: 100px;
+  z-index: 1000;
+  padding-top: 100px;
+  transform: translate(-50%, -50%);
+}
+.centet {
+  position: absolute;
+  color: white;
+  top: 525%;
+  left: 40%;
+  margin-left: 50px;
+  font-family: 'Sofia Pro', sans-serif;  
+  font-size: 100px;
+  font-weight: bold;
+  padding-right: 200px;
+  width: 840px;
+  line-height: 100px;
+  z-index: 1000;
+  padding-top: 100px;
+  transform: translate(-50%, -50%);
+}
+.ce {
+  position: absolute;
+  color: white;
+  top: 270%;
+  left: 40%;
+  margin-left: 50px;
+  font-family: 'Sofia Pro', sans-serif;  
+  font-size: 32px;
+  font-weight: bold;
+  padding-right: 200px;
+  width: 840px;
+  line-height: 100px;
+  z-index: 1000;
+  padding-top: 100px;
+  transform: translate(-50%, -50%);
+}
+.cen{
+  position: absolute;
+  color: white;
+  top: 280%;
+  left: 40%;
+  margin-left: 50px;
+  font-family: 'Sofia Pro', sans-serif;  
+  font-size: 18px;
+  font-weight: bold;
+  padding-right: 200px;
+  width: 840px;
+  
+  z-index: 1000;
+  padding-top: 100px;
+  transform: translate(-50%, -50%);
+}
+
+
+.centt{
+  position: absolute;
+  
+  top: 280%;
+  left: 20%;
+  margin-left: 50px;
+  font-family: 'Sofia Pro', sans-serif;  
+  font-size: 18px;
+  font-weight: bold;
+  padding-right: 200px;
+
+  
+  z-index: 1000;
+  padding-top: 100px;
+  transform: translate(-50%, -50%);
+}
+#txt1{
+
+  color: white;
+  font-family: 'Sofia Pro', sans-serif;  
+  font-size: 100px;
+}
+#txt11{
+
+  color: white;
+  font-family: 'Sofia Pro', sans-serif;  
+  font-size: 90px;
+}
+
+#txt2{
+  padding-top: 20px;
+  color: white;
+  font-family: 'Sofia Pro', sans-serif;  
+  font-size: 35px;
+  line-height: 60px;
+}
+
+#txt3{
+  padding-top: 20px;
+  color: white;
+  font-family: 'Sofia Pro', sans-serif;  
+  font-size: 18px;
+  line-height: 30px;
+}
+#txt4{
+
+  border-radius: 37px;
+  height: 80px;
+  font-size: 28px;
+  width: 300px;
+  color: black;
+  background: white;
+  border: white;
+  font-weight: bold;
+  font-family: 'Sofia Pro', sans-serif;                               
+
+
+
+}
+
+
+
+.navbar{
+
+  border: 0;
+}
+
+.navbar-brand {
+  
+  position: absolute;
+  top:18%;
+  height: auto;
+  padding-left: 0;
+  left: 19.4%;
+}
+
+.stickk .navbar-brand {
+  
+  position: absolute;
+  top: 15%;
+
+}
+
+.navbar-brand h1 {
+  animation: text 2s 1 forwards;
+  font-family: 'Sofia Pro', sans-serif;                               
+  color: white !important;
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+  
+  
+}
+
+@keyframes animate{
+
+ 0%{
+    opacity: 0%;
+  }
+
+ 100%{
+    opacity: 100%;
+  }
+
+}
+
+
+
+
+#bb {
+  color: white !important;
+  text-align: center;
+  opacity: 100%;
+  font-family: 'Sofia Pro', sans-serif; 
+  animation: menu 2s 1 forwards;
+}
+
+
+
+
+
+
+#slides{
+ 
+ 
+ margin-top: 2%;
+ margin-left:  7.8%;
+ margin-right: 7.8%;
+ height: 100%;
+ width: 84%;
+ border-radius: 10px;
+ border: 9px solid black;
+ background: black;
+ position: relative;
+ z-index: 1; 
+
+}
+#overflow{
+ width: 100%;
+ overflow: hidden;
+
+
+}
+
+#slide1:checked ~ #slides .inner{
+
+ margin-left: 0;
+
+ 
+ 
+}
+
+#slide2:checked ~ #slides .inner{
+
+ margin-left: -100%;
+ 
+
+}
+
+
+#slide3:checked ~ #slides .inner{
+
+ margin-left: -200%;
+
+}
+
+#slides .inner {
+  transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+  width: 400%;
+  line-height: 0;
+  height: 100%;
+}
+
+#slides .slide{
+ width: 25%;
+ float: left;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: black;
+ font-size: 120px;
+ font-family:'Sofia Pro', sans-serif;
+ height: 630px;
+ font-weight: bold;
+
+}
+
+#slides .slide_1 {
+
+  background: white;
+}
+
+#slides .slide_2 {
+
+  background: black;
+}
+
+#slides .slide_3 {
+
+  background: black;
+}
+
+
+#controls{
+
+  margin: -180px 0 0 0;
+  width: 100%;
+  height: 50px;
+  z-index: 3;
+  position: relative;
+
+}
+
+#controls label{
+
+  transition: opacity 0.2s ease-out;
+  display: none;
+  width: 50px;
+  height: 50px;
+  opacity: .4;
+
+}
+
+#controls label:hover{
+  opacity: 1;
+}
+
+
+
+#bullets{
+
+  margin: 150px 0 0;
+  margin-left: 250px;
+
+  text-align: center;
+}
+
+#bullets label{
+
+ display: inline-block;
+ width: 10px;
+ height: 10px;
+ background: #ccc;
+ margin: 0 10px;
+ border-radius: 100%;
+
+}
+
+#slide1:checked ~ #bullets label:nth-child(1),
+#slide2:checked ~ #bullets label:nth-child(2),
+#slide3:checked ~ #bullets label:nth-child(3){
+
+
+ background: #444;
+
+}
+
+@media screen and (max-width: 900px){
+
+ #slide1:checked ~ #controls label:nth-child(2),
+ #slide1:checked ~ #controls label:nth-child(3),
+ #slide1:checked ~ #controls label:nth-child(1) 
+ #slide1:checked ~ #controls label:nth-last-child(2),
+ #slide1:checked ~ #controls label:nth-last-child(3),
+ #slide1:checked ~ #controls label:nth-last-child(1){
+
+ margin: 0;
+
+ } 
+
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -37px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  font-size: 50px;
+  margin-top: -57px;
+
+
+}
+
+.prev{
+
+  margin-top: -59px;
+  font-size: 50px;
+
+
+}
+
+/* On hover,  black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  text-decoration: none;
+  opacity: 0.9;
+  color: white;
+}
+
+
+.slide_1 p{
+
+  line-height: 0 !important;
+  align-content: center;
+  align-items: center;
+  margin-top: 302px;
+  margin-left: 250px;
+
+
+}
+
+.slide_2 p{
+
+  line-height: 0 !important;
+  align-content: center;
+  align-items: center;
+  margin-top: 302px;
+  margin-left: 415px;
+
+}
+
+.slide_3 p{
+
+  line-height: 0 !important;
+  align-content: center;
+  align-items: center;
+  margin-top: 302px;
+  margin-left: 387px;
+
+}
+
+
+#ss1:{
+
+  color: black;
+  font-size: 300px;
+
+
+}
+
+
+
+
+
+
+/* The dots/bullets/indicators */
+.carin {
+  cursor: pointer;
+  height: 4px;
+  width: 40px;
+  background-color: white;
+  border: 1.5px solid white;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+
+}
+
+
+
+#carline{
+ 
+  margin-top: -40px;
+  margin-left: 30px; 
+
+}
+.active, .carin:hover {
+  background-color: black;
+}
+
+
+@media (max-width: 3096px) and (min-width: 1700px) {
+
+.dynamic-txts li{
+  list-style: none;
+  color: black;
+  font-size: 2.6vw;
+  font-weight: 600;
+  position: relative;
+  top: 0;
+  animation: slide 6s steps(4) infinite;
+}
+
+
+
+}
+
+@media (max-width: 1341px) and (min-width:1199px){
+
+.jumbotron {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding: 0;
+    margin-top: -17px;
+    margin-right: 0;
+    overflow: hidden;
+    width: 69%;
+    animation: jumbo 3s 1 forwards;
+    background-color: white;
+}
+
+
+}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  
+
+
+
+.dropdown{
+
+ margin-left: 460px;
+ padding-top: 15px;
+ background: white;
+ 
+}
+#navbar-button{
+  background: white;
+  font-size: 16px;
+  font-weight: bold;
+  height: 80px;
+  color: black;
+  opacity: 100%;
+  padding: 0;
+  border:0;
+ 
+}
+
+#navbar-button:hover{
+  opacity: 70%;
+  
+  background: white;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+ 
+}
+
+
+
+
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+
+
+
+  
+ .stickk {
+
+  background-color: black; 
+  
+  position: fixed;
+  top: 0;
+  border: 0;
+  border-radius: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  height: 73px;
+
+} 
+
+.stickk #navline{
+  
+  visibility: hidden;
+}
+
+
+.stickk .navbar-brand h1 { /* Name */
+  animation: text 2s 1 forwards;
+  font-family: 'Sofia Pro', sans-serif;                               
+  color: white;
+  font-size: 57px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .38;
+  
+  
+}
+
+.stickk #bb {
+  color: white;
+  text-align: center;
+  opacity: 100%;
+  animation: menu 2s 1 forwards;
+}
+
+.stickk .icon-burger .line {
+  width: 40px;
+  height: 4px;
+  background-color: white;
+  margin: 5px;
+  border-radius: 4px;
+  transition: all .3s ease-in-out;
+}
+
+
+
+.stickk .linkk {
+    float: none;
+    position: fixed;
+    z-index: 9;
+    left: 100;
+    right: 0;
+    top: 70px;
+    bottom: 100%;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(0,0,0,.86);
+    overflow: hidden;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 20px;
+    box-sizing: border-box;
+    border-left: 10px solid #000000;
+    border-right: 10px solid #000000;
+    transition: all .5s ease-in-out;
+  }
+
+ 
+
+ nav .linkk {
+    float: none;
+    position: fixed;
+    z-index: 9;
+    left: 100;
+    right: 0;
+    top: 90px;
+    bottom: 100%;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(0,0,0,.86);
+    overflow: hidden;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 20px;
+    box-sizing: border-box;
+    border-left: 10px solid #000000;
+    border-right: 10px solid #000000;
+    transition: all .5s ease-in-out;
+}
+
+
+
+
+
+
+/********** Small devices only **********/
+@media (min-width: 767px) and (max-width: 991px) {
+
+
+
+
+
+  #header-nav {
+ 
+  border-radius: 0;
+  border: 0;
+  margin-bottom: 60px;
+  /*overflow: hidden;
+  position: fixed;*/
+  width: 100%;
+  height: 73px;
+
+
+}
+
+
+
+nav .icon-burger {
+  display: none;
+  
+  margin-top: 0px;
+  right: 1.6%;
+  top: 41%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+
+
+  nav .linkk {
+    float: none;
+    position: fixed;
+    z-index: 9;
+    left: 100;
+    right: 0;
+    top: 90px;
+    bottom: 100%;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(0,0,0,.86);
+    overflow: hidden;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 10px;
+    box-sizing: border-box;
+    border-left: 10px solid #000000;
+    border-right: 10px solid #000000;
+    transition: all .5s ease-in-out;
+  }
+
+
+
+
+
+
+  nav .linkk a {
+    font-size: 20px;
+
+  }
+  nav :checked ~ .linkk {
+    bottom: 0;
+  }
+  nav .icon-burger {
+    display: block;
+  }
+  nav :checked ~ .icon-burger .line:nth-child(1) {
+    transform: translateY(10px) rotate(225deg);
+  }
+  nav :checked ~ .icon-burger .line:nth-child(3) {
+    transform: translateY(-10px) rotate(-225deg);
+  }
+  nav :checked ~ .icon-burger .line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .stickk {
+
+  background-color: black; 
+  
+  position: fixed;
+  top: 0;
+  border: 0;
+  border-radius: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  height: 73px;
+
+} 
+
+.stickk #navline{
+  
+  visibility: hidden;
+}
+
+
+.stickk .navbar-brand h1 { /* Name */
+  animation: text 2s 1 forwards;
+  font-family: 'Sofia Pro', sans-serif;                               
+  color: white;
+  font-size: 57px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .38;
+  
+  
+}
+
+.stickk #bb {
+  color: white;
+  text-align: center;
+  opacity: 100%;
+  animation: menu 2s 1 forwards;
+}
+
+.stickk .icon-burger {
+ 
+  margin-top: 0px;
+  right: 1.6%;
+  top: 38%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.stickk .icon-burger .line {
+  width: 40px;
+  height: 4px;
+  background-color: white;
+  margin: 5px;
+  border-radius: 4px;
+  transition: all .3s ease-in-out;
+}
+
+
+.stickk .linkk {
+    float: none;
+    position: fixed;
+    z-index: 9;
+    left: 100;
+    right: 0;
+    top: 70px;
+    bottom: 100%;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(0,0,0,.86);
+    overflow: hidden;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 10px !important;
+    box-sizing: border-box;
+    border-left: 7px solid #000000;
+    border-right: 10px solid #000000;
+    transition: all .5s ease-in-out;
+  }
+
+ /////////////////////////////////////
+
+
+
+#slides{
+ 
+ 
+ margin-top: 2%;
+ margin-left:  6.3%;
+ margin-right: 6.3%;
+ height: 100%;
+ width: 87.8%;
+ border-radius: 10px;
+ border: 9px solid black;
+ background: black;
+ position: relative;
+ z-index: 1; 
+
+}
+
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+
+
+.count{
+
+ position: absolute;
+ top: 94%;
+ left: 0.1%;
+ transform: translate(-50%,-50%);
+ font-size: 80px;
+ color: #fff;
+ font-weight: 600;
+ mix-blend-mode: difference;
+ width: 400px;
+ text-align: right;
+ font-family: Josefin Sans; 
+
+}
+
+
+  
+  nav .linkk {
+    float: none;
+    position: fixed;
+    z-index: 9;
+    left: 100;
+    right: 0;
+    top: 62px;
+    bottom: 100%;
+    width: 85px;
+    height: auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(0,0,0,.9);
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: all .5s ease-in-out;
+    border-left: 10px solid #000000;
+    border-right: 10px solid #000000;
+    margin-right: 10px !important;
+
+
+  }
+  nav .linkk a {
+    font-size: 17px !important;
+  }
+  nav :checked ~ .linkk {
+    bottom: 0;
+  }
+  nav .icon-burger {
+    display: block;
+  }
+  nav :checked ~ .icon-burger .line:nth-child(1) {
+    transform: translateY(10px) rotate(225deg);
+  }
+  nav :checked ~ .icon-burger .line:nth-child(3) {
+    transform: translateY(-10px) rotate(-225deg);
+  }
+  nav :checked ~ .icon-burger .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  nav .icon-burger {
+  
+  position: absolute;
+  margin-top: 0px;
+  right: 2%;
+  top: 23%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+ .stickk .icon-burger {
+  
+  position: absolute;
+  margin-top: 0px;
+  right: 2%;
+  top: 30%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.stickk {
+
+  background-color: black; 
+  
+  position: fixed;
+  top: 0;
+  border: 0;
+  border-radius: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  height: 63px;
+
+} 
+
+.stickk #navline{
+  
+  visibility: hidden;
+}
+
+
+.stickk .navbar-brand h1 { /* Name */
+  animation: text 2s 1 forwards;
+  font-family: 'Sofia Pro', sans-serif;                               
+  color: white;
+  font-size: 49px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .38;
+  
+  
+}
+
+.stickk #bb {
+  color: white;
+  text-align: center;
+  opacity: 100%;
+  animation: menu 2s 1 forwards;
+}
+
+.stickk .icon-burger .line {
+  width: 37px;
+  height: 4px;
+  background-color: white;
+  margin: 5px;
+  border-radius: 4px;
+  transition: all .3s ease-in-out;
+}
+
+.stickk #ll{
+
+ width: 36px;
+ margin-left: 15px;
+
+}
+
+
+
+.stickk .linkk {
+    float: none;
+    position: fixed;
+    z-index: 9;
+    left: 100;
+    right: 0;
+    top: 63px;
+    bottom: 100%;
+    width: 85px;
+    height: auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(0,0,0,.86);
+    overflow: hidden;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 30px;
+    box-sizing: border-box;
+    border-left: 10px solid #000000;
+    border-right: 10px solid #000000;
+    transition: all .5s ease-in-out;
+  }
+
+  .navbar-brand hr {
+    width: 400px;
+   
+    height: 4px;
+    left: 100%;
+    animation: text 3s 1 forwards;
+    /*animation: text 2s 1 forwards;*/
+  }
+
+  @keyframes text {
+  
+  0%{
+    left: 0%;
+    width: 0px;
+  }
+
+  100%{
+    left: 100%;
+    width: 290px;
+  }
+
+}
+
+.abc span{
+ 
+ padding-top: 0px;
+ color: white;
+ font-family:'Sofia Pro', sans-serif; 
+ font-size: 100px;
+ margin-left: 2.4%;
+ font-weight: bold;
+ line-height: 1.35;
+
+}
+
+.abc{
+  
+ height: 870px;
+
+}
+
+.projec{
+
+ margin-bottom: 6%;
+  
+
+}
+
+#slides{
+ 
+ 
+ margin-top: 2%;
+ margin-left: 4%;
+ margin-right: 4%;
+ height: 100%;
+ width: 92%;
+ border-radius: 10px;
+ border: 0px solid black;
+ background: black;
+ position: relative;
+ z-index: 1; 
+
+}
+
+
+}
+
+
+
+
+  /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+  @media (max-width: 479px) {
+  /* Header */
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 5px;
+   /* font-size: 6vw; */
+
+   }
+
+   .form-title {
+    font-family: 'Sofia Pro', sans-serif;
+    font-size: 30px;
+    color: white;
+    font-weight: 390;
+    margin-bottom: 30px;
+    margin-left: 0px;
+    padding-right: 40px !important;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+
+#txt1 {
+    color: white;
+    font-family: 'Sofia Pro', sans-serif;
+    font-size: 30px;
+}
+
+
+.centered {
+    position: absolute;
+    color: white;
+    text-align: center;
+    top: 225%;
+    left: 40%;
+    margin-left: 50px;
+    font-family: 'Sofia Pro', sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    padding-right: 0px;
+    width: 840px;
+    line-height: 100px;
+    z-index: 1000;
+    padding-top: 100px;
+    transform: translate(-50%, -50%);
+}
+
+#txt2 {
+    padding-top: 20px;
+    color: white;
+    font-family: 'Sofia Pro', sans-serif;
+    font-size: 30px;
+    line-height: 60px;
+    text-align: center;
+}
+  /* End Header */
+  
+  /* Home page */
+  #menu-tile, #specials-tile {
+    width: 280px;
+    margin: 0 auto 15px;
+  }
+   
+  .col-xxs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
+  }
+  nav .linkk {
+    float: none;
+    position: fixed;
+    z-index: 9;
+    left: 100;
+    right: 0;
+    top: 90px;
+    bottom: 100%;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(0,0,0,.9);
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: all .5s ease-in-out;
+    border-left:0;
+    border-right:0;
+    margin-right: 0;
+    border-left: 5px solid #000000;
+    border-right: 5px solid #000000;
+  }
+  nav .linkk a {
+    font-size: 20px;
+  }
+  nav :checked ~ .linkk {
+    bottom: 0;
+  }
+  nav .icon-burger {
+    display: block;
+  }
+  nav :checked ~ .icon-burger .line:nth-child(1) {
+    transform: translateY(10px) rotate(225deg);
+  }
+  nav :checked ~ .icon-burger .line:nth-child(3) {
+    transform: translateY(-10px) rotate(-225deg);
+  }
+  nav :checked ~ .icon-burger .line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .stickk {
+
+  background-color: black; 
+  
+  position: fixed;
+  top: 0;
+  border: 0;
+  border-radius: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  height: 73px;
+
+} 
+
+.stickk #navline{
+  
+  visibility: hidden;
+}
+
+
+.stickk .navbar-brand h1 { /* Name */
+  animation: text 2s 1 forwards;
+  font-family: 'Sofia Pro', sans-serif;                               
+  color: white;
+  font-size: 57px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .38;
+  
+  
+}
+
+
+
+
+.stickk #bb {
+  color: white;
+  text-align: center;
+  opacity: 100%;
+  animation: menu 2s 1 forwards;
+}
+
+.stickk .icon-burger .line {
+  width: 40px;
+  height: 4px;
+  background-color: white;
+  margin: 5px;
+  border-radius: 4px;
+  transition: all .3s ease-in-out;
+}
+
+
+.stickk .linkk {
+    float: none;
+    position: fixed;
+    z-index: 9;
+    left: 100;
+    right: 0;
+    top: 70px;
+    bottom: 100%;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(0,0,0,.86);
+    overflow: hidden;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 30px;
+    box-sizing: border-box;
+    border-left: 5px solid #000000;
+    border-right: 5px solid #000000;
+    transition: all .5s ease-in-out;
+  }
+
+
+
+}  
+
+
+@media (max-width: 1190px) {
+
+  #nav-list{
+
+   
+   left: 41%;
+
+
+  }
+
+}
+@media (max-width: 900px) {
+
+  #nav-list{
+
+   display: none;
+
+
+  }
+
+}
+
+@media (max-width: 1176px) and (min-width: 991px){
+
+.navbar-brand hr {
+    width: 300px;
+   
+    height: 4px;
+    left: 100%;
+    animation: text 3s 1 forwards;
+    /*animation: text 2s 1 forwards;*/
+}
+
+@keyframes text {
+  
+  0%{
+    left: 0%;
+    width: 0px;
+  }
+
+  100%{
+    left: 100%;
+    width: 300px;
+  }
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MUSIC PAGE END */
+
+@media (max-width: 506px) and (min-width: 479px){
+
+
+.stickk {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    border: 0;
+    border-radius: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    height: 64px;
+}
+
+.stickk .navbar-brand {
+    position: absolute;
+    top: 21%;
+}
+
+#preig {
+    font-family: "Helvetica Now Display DW",sans-serif;
+    font-weight: 350;
+    letter-spacing: .3em;
+    color: #878a8f;
+    font-size: 16px;
+    line-height: 1.25rem;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 24px;
+}
+
+}
+
+
+
+@media (max-width: 479px) and (min-width: 426px){
+
+
+
+
+.stickk .navbar-brand {
+    position: absolute;
+    top: 10%;
+}
+
+.stickk {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    border: 0;
+    border-radius: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    height: 64px;
+}
+
+.stickk .linkk {
+
+
+    top: 63px;
+
+  }
+
+}
+
+@media (max-width: 426px) and (min-width: 395px){
+
+
+.stickk .linkk {
+
+
+    top: 63px;
+
+  }
+
+
+.stickk .navbar-brand {
+    position: absolute;
+    top: 10%;
+}
+
+.stickk {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    border: 0;
+    border-radius: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    height: 64px;
+}
+
+
+}
+
+@media (max-width: 395px) and (min-width: 360px){
+
+
+.stickk .linkk {
+
+
+    top: 63px;
+
+}
+
+
+.stickk .navbar-brand {
+    position: absolute;
+    top: 2%;
+}
+
+.stickk {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    border: 0;
+    border-radius: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    height: 64px;
+}
+
+
+
+
+
+
+.stickk .navbar-brand h1 {
+    animation: text 2s 1 forwards;
+    font-family: 'Sofia Pro', sans-serif;
+    color: white;
+    font-size: 49px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .38;
+}
+
+
+
+nav .icon-burger {
+    position: absolute;
+    margin-top: 0px;
+    right: 2%;
+    top: 28%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.stickk .icon-burger {
+    position: absolute;
+    margin-top: 0px;
+    right: 2%;
+    top: 33%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.projec {
+    margin-bottom: 8%;
+    margin-top: 4.5%;
+}
+
+
+#skillssname {
+    font-family: 'Sofia Pro', sans-serif;
+    font-size: 75px;
+    color: white;
+    opacity: 0.8;
+    font-weight: bold;
+    margin-left: 3.7%;
+    line-height: 1.35;
+    margin-bottom: 7%;
+    align-content: left;
+}
+
+
+}
